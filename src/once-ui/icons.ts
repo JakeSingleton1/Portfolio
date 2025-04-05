@@ -15,7 +15,7 @@ import {
   HiInformationCircle,
   HiExclamationCircle,
   HiCheckCircle,
-  HiMiniGlobeAsiaAustralia,
+  HiMiniGlobeAmericas,
   HiArrowTopRightOnSquare,
   HiEnvelope,
   HiCalendarDays,
