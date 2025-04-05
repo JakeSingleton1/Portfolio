@@ -34,7 +34,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https:/www.linkedin.com/in/jakesingleton1",
+    link: "https://linkedin.com/in/jakesingleton1",
 
   },
   {
@@ -62,7 +62,7 @@ const home = {
   Business Development <br />at Tiberon Systems</>,
   subline: (
     <>
-      I'm Jake, a business development director at <InlineCode><a href="https://tiberon.co" target="_blank" rel="noopener noreferrer">Tiberon</a></InlineCode>, where we are developing 
+      I'm Jake, a business development director at <InlineCode><a href="https://tiberon.co" target="_blank" rel="noopener noreferrer">Tiberon</a></InlineCode>,where we are developing 
       a CRM platform aimed at small businesses with minimal technical skills. By day I am a CIS Student at the McCoy College of Business and after hours, I enjoy building my own projects.
     </>
   ),

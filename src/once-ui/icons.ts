@@ -15,7 +15,7 @@ import {
   HiInformationCircle,
   HiExclamationCircle,
   HiCheckCircle,
-  HiMiniGlobeAsiaAustralia,
+  HiMiniGlobeAmericas,
   HiArrowTopRightOnSquare,
   HiEnvelope,
   HiCalendarDays,
@@ -23,7 +23,6 @@ import {
   HiArrowRight,
   HiOutlineEye,
   HiOutlineEyeSlash,
-  HiMiniGlobeAmericas,
 } from "react-icons/hi2";
 
 import {
@@ -53,8 +52,8 @@ export const iconLibrary: Record<string, IconType> = {
   checkCircle: HiCheckCircle,
   email: HiEnvelope,
   globe: HiMiniGlobeAmericas,
-  phone: FaPhone,
   person: PiUserCircleDuotone,
+  phone: FaPhone,
   grid: PiGridFourDuotone,
   book: PiBookBookmarkDuotone,
   close: HiMiniXMark,
