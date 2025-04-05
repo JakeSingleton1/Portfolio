@@ -33,7 +33,7 @@ import {
   PiImageDuotone,
 } from "react-icons/pi";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaPhone, FaDiscord, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   chevronUp: HiChevronUp,
@@ -50,8 +50,9 @@ export const iconLibrary: Record<string, IconType> = {
   errorCircle: HiExclamationCircle,
   checkCircle: HiCheckCircle,
   email: HiEnvelope,
-  globe: HiMiniGlobeAsiaAustralia,
+  globe: HiMiniGlobeAmericas,
   person: PiUserCircleDuotone,
+  phone: FaPhone,
   grid: PiGridFourDuotone,
   book: PiBookBookmarkDuotone,
   close: HiMiniXMark,
