@@ -23,6 +23,7 @@ import {
   HiArrowRight,
   HiOutlineEye,
   HiOutlineEyeSlash,
+  HiMiniGlobeAmericas,
 } from "react-icons/hi2";
 
 import {
@@ -31,9 +32,10 @@ import {
   PiGridFourDuotone,
   PiBookBookmarkDuotone,
   PiImageDuotone,
+  PiPhone,
 } from "react-icons/pi";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaPhone, FaDiscord, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   chevronUp: HiChevronUp,
@@ -50,7 +52,8 @@ export const iconLibrary: Record<string, IconType> = {
   errorCircle: HiExclamationCircle,
   checkCircle: HiCheckCircle,
   email: HiEnvelope,
-  globe: HiMiniGlobeAsiaAustralia,
+  globe: HiMiniGlobeAmericas,
+  phone: FaPhone,
   person: PiUserCircleDuotone,
   grid: PiGridFourDuotone,
   book: PiBookBookmarkDuotone,

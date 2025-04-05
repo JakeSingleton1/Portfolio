@@ -1,4 +1,5 @@
 import { InlineCode } from "@/once-ui/components";
+import { PiPhone } from "react-icons/pi";
 
 const person = {
   firstName: "Jake",
@@ -46,6 +47,11 @@ const social = [
     icon: "email",
     link: "mailto:jakesingleton2002@gmail.com",
   },
+  {
+    name: "Phone",
+    icon: "phone",
+    link: "tel: 2818982882"
+  }
 ];
 
 const home = {
@@ -56,7 +62,7 @@ const home = {
   Business Development <br />at Tiberon Systems</>,
   subline: (
     <>
-      I'm Jake, a business development director at <InlineCode><a href="https://tiberon.co" target="_blank" rel="noopener noreferrer">Tiberon</a></InlineCode>,where my brother and I are developing 
+      I'm Jake, a business development director at <InlineCode><a href="https://tiberon.co" target="_blank" rel="noopener noreferrer">Tiberon</a></InlineCode>, where we are developing 
       a CRM platform aimed at small businesses with minimal technical skills. By day I am a CIS Student at the McCoy College of Business and after hours, I enjoy building my own projects.
     </>
   ),
@@ -197,9 +203,10 @@ const about = {
 };
 
 const blog = {
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
+   label: "Blog",
+   title: "Writing about tech...",
+   description: `Read what ${person.name} has been up to recently`,
+
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
@@ -222,71 +229,6 @@ const gallery = {
       src: "/images/gallery/img-01.jpg",
       alt: "image",
       orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
-      orientation: "horizontal",
     },
   ],
 };
