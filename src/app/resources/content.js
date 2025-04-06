@@ -162,7 +162,7 @@ const about = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/python-demo.gif",
+            src: "/images/projects/Python-Demo.gif",
             alt: "Seaborn and Matplotlib data visualization gif",
             width: 16,
             height: 9,
