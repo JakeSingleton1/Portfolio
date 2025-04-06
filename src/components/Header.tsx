@@ -130,14 +130,14 @@ export const Header = () => {
                 <>
                   <ToggleButton
                     className="s-flex-hide"
-                    prefixIcon="gallery"
+                    prefixIcon="contact"
                     href="/gallery"
                     label={gallery.label}
                     selected={pathname.startsWith("/gallery")}
                   />
                   <ToggleButton
                     className="s-flex-show"
-                    prefixIcon="gallery"
+                    prefixIcon="contact"
                     href="/gallery"
                     selected={pathname.startsWith("/gallery")}
                   />

@@ -81,7 +81,7 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/jakesingleton",
   },
   intro: {
     display: true,
@@ -112,7 +112,7 @@ const about = {
           // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/hypercrm.png",
-            alt: "Hyper CRM high fidelity",
+            alt: "Hyper CRM high fidelity. Credit: Myles Lane - Tiberon Systems",
             width: 20,
             height: 10,
           },
@@ -158,12 +158,12 @@ const about = {
     skills: [
       {
         title: "Python",
-        description: <>Learned structured and object-oriented programming concepts to form solutions to business problems using Python.</>,
+        description: <>Learned structured and object-oriented programming concepts to form solutions to business problems using Python. Utilized data visualization libraries to create charts and graphs to help with decision making for Fintech.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
+            src: "/images/projects/python-demo.gif",
+            alt: "Seaborn and Matplotlib data visualization gif",
             width: 16,
             height: 9,
           },
@@ -182,13 +182,13 @@ const about = {
         images: [
           {
             src: "/images/projects/bugfinder-ss.png",
-            alt: "Project image",
+            alt: "Bugfinder image",
             width: 16,
             height: 9,
           },
           {
             src: "/images/projects/bugfinder.gif",
-            alt: "Project gif",
+            alt: "Bugfinder gif",
             width: 20,
             height: 9,
           },
@@ -220,8 +220,8 @@ const work = {
 };
 
 const gallery = {
-  label: "Gallery",
-  title: "My photo gallery",
+  label: "Contact",
+  title: "Contact Jake",
   description: `A photo collection by ${person.name}`,
   // Images from https://pexels.com
   images: [

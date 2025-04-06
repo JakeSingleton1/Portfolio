@@ -36,11 +36,15 @@ import {
 
 import { FaPhone, FaDiscord, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
+import { MdContactPhone } from "react-icons/md";
+
+
 export const iconLibrary: Record<string, IconType> = {
   chevronUp: HiChevronUp,
   chevronDown: HiChevronDown,
   chevronRight: HiChevronRight,
   chevronLeft: HiChevronLeft,
+  contact: MdContactPhone,
   refresh: HiOutlineArrowPath,
   arrowUpRight: HiArrowUpRight,
   check: HiCheck,
