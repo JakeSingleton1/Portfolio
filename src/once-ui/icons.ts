@@ -37,6 +37,7 @@ import {
 import { FaPhone, FaDiscord, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 import { MdContactPhone } from "react-icons/md";
+import { contact } from "@/app/resources";
 
 
 export const iconLibrary: Record<string, IconType> = {

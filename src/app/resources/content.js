@@ -38,11 +38,6 @@ const social = [
 
   },
   {
-    name: "X",
-    icon: "x",
-    link: "",
-  },
-  {
     name: "Email",
     icon: "email",
     link: "mailto:jakesingleton2002@gmail.com",
@@ -58,12 +53,12 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Student at <br />Texas State  <br /> <br />
-  Business Development <br />at Tiberon Systems</>,
+  headline: <>Student at <br />Texas State 👨🏻‍🎓 <br /> <br />
+  Business Development <br />at Tiberon Systems 👨🏻‍💼</>,
   subline: (
     <>
-      I'm Jake, a business development director at <InlineCode><a href="https://tiberon.co" target="_blank" rel="noopener noreferrer">Tiberon</a></InlineCode>,where we are developing 
-      a CRM platform aimed at small businesses with minimal technical skills. By day I am a CIS Student at the McCoy College of Business and after hours, I enjoy building my own projects.
+      I'm Jake, a business development director at <InlineCode><a href="https://tiberon.co" target="_blank" rel="noopener noreferrer">Tiberon</a></InlineCode>where we are developing 
+      a CRM platform aimed at small businesses with minimal technical skills. By day I am a CIS Student at the McCoy College of Business and after hours, I enjoy building my own projects such as this website.
     </>
   ),
 };
@@ -85,7 +80,7 @@ const about = {
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Introduction 👋",
     description: (
       <>
       Jake is a Texas State University Computer Information Systems major aspiring to be a software engineer.
@@ -94,7 +89,7 @@ const about = {
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Work Experience 💼",
     experiences: [
       {
         company: "Tiberon Systems",
@@ -139,11 +134,11 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Studies 📚",
     institutions: [
       {
         name: "Texas State University",
-        description: <>Studied software engineering.</>,
+        description: <>Studied Computer Information Systems.</>,
       },
       /**
       {
@@ -154,10 +149,10 @@ const about = {
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technologies",
+    title: "Technologies 👨🏽‍💻",
     skills: [
       {
-        title: "Python",
+        title: "Python 🐍",
         description: <>Learned structured and object-oriented programming concepts to form solutions to business problems using Python. Utilized data visualization libraries to create charts and graphs to help with decision making for Fintech.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -168,17 +163,22 @@ const about = {
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/report-generator.gif",
             alt: "Project image",
             width: 16,
             height: 9,
           },
+          {
+            src: "/images/projects/Keno-Demo.gif",
+            alt: "Project image",
+            width: 16,
+            height: 12,
+          },
         ],
       },
       {
-        title: "Web Design",
-        description: <>Learned HTML,CSS and JavaScript with jQuery frameworks to build a working website. Used product development methods to build a platform for users to report bugs.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Web Design </>",
+        description: <>Learned HTML,CSS and JavaScript with jQuery and Bootstrap frameworks to build a working website. Used product development methods to build a platform for users to report bugs. Utilized additional tools like Figma to design the website. Additionally, I have experience with React and Next.js , which I used to build this wonderful website you are viewing 😁.</>,
         images: [
           {
             src: "/images/projects/bugfinder-ss.png",
@@ -195,8 +195,8 @@ const about = {
         ],
       },
       {
-        title: 'SQL',
-        description:<>Creating and implementing large datasets using Microsoft SQL and PostgreSQL.</>
+        title: 'SQL ⛁',
+        description:<>Proficient in database design and management using Microsoft SQL Server and PostgreSQL. Experienced in writing complex queries, creating stored procedures, and optimizing database performance. Skilled in data modeling, normalization, and implementing efficient database schemas for business applications.</>
       }
     ],
   },
@@ -204,7 +204,7 @@ const about = {
 
 const blog = {
    label: "Blog",
-   title: "Writing about tech...",
+   title: "Jakes Blog",
    description: `Read what ${person.name} has been up to recently`,
 
   // Create new blog posts by adding a new .mdx file to app/blog/posts
@@ -219,18 +219,27 @@ const work = {
   // All projects will be listed on the /home and /work routes
 };
 
-const gallery = {
+const contact = {
   label: "Contact",
-  title: "Contact Jake",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
-  images: [
-    {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
+  title: "Contact Jake Singleton",
+  description: `Get in touch with ${person.firstName}`,
+  contactInfo: {
+    email: "jakesingleton2002@gmail.com",
+    phone: "281-898-2882",
+    location: "San Marcos, Texas",
+    availability: "Available for freelance and full-time opportunities"
+  },
+  socialLinks: social, // Reuse the social links from the social array
+  calendar: {
+    display: true,
+    link: "https://cal.com/jakesingleton",
+    description: "Schedule a meeting with me"
+  },
+  form: {
+    display: true,
+    title: "Send me a message",
+    description: "I'll get back to you as soon as possible"
+  }
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work, contact };
