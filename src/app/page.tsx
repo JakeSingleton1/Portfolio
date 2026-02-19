@@ -77,7 +77,7 @@ export default function Home() {
           fillWidth
           paddingY="l"
           paddingX="l"
-          border="neutral-subtle"
+          border="neutral-medium"
           radius="l"
           direction="column"
           gap="m"
