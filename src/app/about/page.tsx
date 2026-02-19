@@ -53,6 +53,11 @@ export default function About() {
       items: [],
     },
     {
+      title: about.resume.title,
+      display: about.resume.display,
+      items: [],
+    },
+    {
       title: about.work.title,
       display: about.work.display,
       items: about.work.experiences.map((experience) => experience.company),
@@ -228,16 +233,27 @@ export default function About() {
                   overflow="hidden"
                   style={{ minHeight: "800px" }}
                 >
-                  <iframe
-                    src="/resume"
-                    title="Resume PDF"
+                  <object
+                    data="/resume"
+                    type="application/pdf"
                     style={{
                       width: "100%",
                       height: "100%",
                       minHeight: "800px",
                       border: "none",
                     }}
-                  />
+                  >
+                    <iframe
+                      src="/resume"
+                      title="Resume PDF"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        minHeight: "800px",
+                        border: "none",
+                      }}
+                    />
+                  </object>
                 </Flex>
                 <Flex gap="m" wrap>
                   <Button

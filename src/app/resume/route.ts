@@ -10,6 +10,8 @@ export async function GET() {
       headers: {
         "Content-Type": "application/pdf",
         "Content-Disposition": 'inline; filename="Jake-Singleton-Resume.pdf"',
+        "Cache-Control": "public, max-age=31536000, immutable",
+        "X-Content-Type-Options": "nosniff",
       },
     });
   } catch (err) {
