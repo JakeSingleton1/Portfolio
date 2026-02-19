@@ -79,7 +79,7 @@ const about = {
     title: "Introduction 👋",
     description: (
       <>
-      Jake is a Texas State University Computer Information Systems major aspiring to be a software engineer.
+      Jake is a Texas State University Computer Information Systems major aspiring to be a software solutions engineer.
       </>
     ),
   },
