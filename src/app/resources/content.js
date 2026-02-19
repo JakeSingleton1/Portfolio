@@ -54,13 +54,9 @@ const home = {
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Student at <br />Texas State 👨🏻‍🎓 <br /> <br />
-  Business Development <br />at Tiberon Systems 👨🏻‍💼</>,
-  subline: (
-    <>
-      I'm Jake, a business development director at <InlineCode><a href="https://tiberon.co" target="_blank" rel="noopener noreferrer">Tiberon</a></InlineCode>where we are developing 
-      a CRM platform aimed at small businesses with minimal technical skills. By day I am a CIS Student at the McCoy College of Business and after hours, I enjoy building my own projects such as this website.
-    </>
-  ),
+  Business Development <br />at Tiberon Systems 👨🏻‍💼 <br /> <br />
+  Currently... <br />Tasting Room Associate <br />@ <a href="https://www.wimberleyvalleywinery.com/" target="_blank" rel="noopener noreferrer">Wimberley Valley Winery</a> 🍷</>,
+  subline: null,
 };
 
 const about = {
@@ -200,6 +196,10 @@ const about = {
       }
     ],
   },
+  resume: {
+    display: true, // set to false to hide this section
+    title: "Resume 📄",
+  },
 };
 
 const blog = {
@@ -242,4 +242,18 @@ const contact = {
   }
 };
 
-export { person, social, newsletter, home, about, blog, work, contact };
+const resume = {
+  label: "Resume",
+  title: "View my resume",
+  description: (
+    <>
+      Explore my experience, education, and skills in more detail. View
+      or download a PDF copy of my resume.
+    </>
+  ),
+  ctaLabel: "View resume",
+  // Served via /resume route handler (reads from public/resume.pdf)
+  filePath: "/resume",
+};
+
+export { person, social, newsletter, home, about, blog, work, contact, resume };

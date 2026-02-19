@@ -12,6 +12,7 @@ import {
 } from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
 import TableOfContents from "@/components/about/TableOfContents";
+import ScrollToHash from "@/components/ScrollToHash";
 import styles from "@/components/about/about.module.scss";
 import { person, about, social } from "@/app/resources/content";
 
@@ -209,6 +210,58 @@ export default function About() {
             </Column>
           )}
 
+          {about.resume.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.resume.title}
+                variant="display-strong-s"
+                marginBottom="m"
+              >
+                {about.resume.title}
+              </Heading>
+              <Column fillWidth gap="m" marginBottom="40">
+                <Flex
+                  fillWidth
+                  border="neutral-medium"
+                  radius="m"
+                  overflow="hidden"
+                  style={{ minHeight: "800px" }}
+                >
+                  <iframe
+                    src="/resume"
+                    title="Resume PDF"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      minHeight: "800px",
+                      border: "none",
+                    }}
+                  />
+                </Flex>
+                <Flex gap="m" wrap>
+                  <Button
+                    href="/resume"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    variant="secondary"
+                    size="m"
+                  >
+                    Open in new tab
+                  </Button>
+                  <Button
+                    href="/resume"
+                    download="Jake-Singleton-Resume.pdf"
+                    variant="secondary"
+                    size="m"
+                  >
+                    Download PDF
+                  </Button>
+                </Flex>
+              </Column>
+            </>
+          )}
+
           {about.work.display && (
             <>
               <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m">
@@ -341,6 +394,7 @@ export default function About() {
           )}
         </Column>
       </Flex>
+      <ScrollToHash />
     </Column>
   );
 }
