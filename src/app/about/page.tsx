@@ -233,31 +233,20 @@ export default function About() {
                   overflow="hidden"
                   style={{ minHeight: "800px" }}
                 >
-                  <object
-                    data="/resume"
-                    type="application/pdf"
+                  <iframe
+                    src="/resume.pdf#view=FitH"
+                    title="Resume PDF"
                     style={{
                       width: "100%",
                       height: "100%",
                       minHeight: "800px",
                       border: "none",
                     }}
-                  >
-                    <iframe
-                      src="/resume"
-                      title="Resume PDF"
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        minHeight: "800px",
-                        border: "none",
-                      }}
-                    />
-                  </object>
+                  />
                 </Flex>
                 <Flex gap="m" wrap>
                   <Button
-                    href="/resume"
+                    href="/resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     variant="secondary"
@@ -266,7 +255,7 @@ export default function About() {
                     Open in new tab
                   </Button>
                   <Button
-                    href="/resume"
+                    href="/resume.pdf"
                     download="Jake-Singleton-Resume.pdf"
                     variant="secondary"
                     size="m"
